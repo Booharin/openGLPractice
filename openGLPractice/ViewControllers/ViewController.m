@@ -16,13 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setOpenGLView];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setOpenGLView {
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    _glView = [[OpenGLView alloc] initWithFrame: screenBounds];
+    [self.view addSubview:_glView];
 }
 
 

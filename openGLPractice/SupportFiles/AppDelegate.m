@@ -14,13 +14,7 @@
 
 @implementation AppDelegate
 
-@synthesize glView=_glView;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    self.glView = [[OpenGLView alloc] initWithFrame: screenBounds];
-    [self.window addSubview:_glView];
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     return YES;
 }
 
